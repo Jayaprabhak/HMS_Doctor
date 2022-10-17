@@ -1,0 +1,15 @@
+<div>
+    <table border="1">
+        <tr>
+            <th>Patient Name</th>
+            <th>Symptoms </th>
+            <th>Mobile No</th>
+        </tr>
+        <tr *ngFor="let patient of patients">
+            <td>{{patient.pname}}</td>
+            <td>{{patient.symptoms}}</td>
+            <td>{{patient.mobile}}</td>
+            <td><button (click) = "deletePatient(patient)"> </button></td>
+        </tr>
+    </table>
+</div>

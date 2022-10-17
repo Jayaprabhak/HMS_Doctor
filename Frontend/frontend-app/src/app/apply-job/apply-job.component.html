@@ -1,0 +1,21 @@
+<div>
+    <form [formGroup]="doctorRef" (ngSubmit)="applyjob()">
+        <label>Doctor Name</label>
+        <input type="text" formControlName="dname"><br/>
+        <label>Age</label>
+        <input type="number" formControlName="dage"><br/>
+        <label>Phone Number</label>
+        <input type="number" formControlName="phno"><br/>
+        <label>Gender</label>
+        <input type="text" formControlName="dgender"><br/>
+        <label>Email Id</label>
+        <input type="text" formControlName="emailid"><br/>
+        <label>Address</label>
+        <input type="text" formControlName="daddress"><br/>
+        <label>Specialization</label>
+        <input type="text" formControlName="specialization"><br/>
+        <input type="submit" value="Apply Job"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
