@@ -12,7 +12,7 @@ export class DoctorComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  getdid (emailid:any) {
-    
+  logout(){
+    localStorage.removeItem("doctorId");
   }
 }
