@@ -10,6 +10,14 @@ import { DoctorappointmentsComponent } from './doctorappointments/doctorappointm
 import { DoctorPatientsComponent } from './doctor-patients/doctor-patients.component';
 import { ApplyJobComponent } from './apply-job/apply-job.component';
 import { ViewIdComponent } from './view-id/view-id.component';
+import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
+import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
+import { DischargedPatientComponent } from './discharged-patient/discharged-patient.component';
+import { PatientAdmitComponent } from './Patient/patient-admit/patient-admit.component';
+import { PatientAppointmentComponent } from './Patient/patient-appointment/patient-appointment.component';
+import { PatientDoctorComponent } from './Patient/patient-doctor/patient-doctor.component';
+import { PatientComponent } from './Patient/patient/patient.component';
+import { GetDocidComponent } from './get-docid/get-docid.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +26,15 @@ import { ViewIdComponent } from './view-id/view-id.component';
     DoctorappointmentsComponent,
     DoctorPatientsComponent,
     ApplyJobComponent,
-    ViewIdComponent
+    ViewIdComponent,
+    DoctorLoginComponent,
+    DoctorSignupComponent,
+    DischargedPatientComponent,
+    PatientAdmitComponent,
+    PatientAppointmentComponent,
+    PatientDoctorComponent,
+    PatientComponent,
+    GetDocidComponent
   ],
   imports: [
     BrowserModule,

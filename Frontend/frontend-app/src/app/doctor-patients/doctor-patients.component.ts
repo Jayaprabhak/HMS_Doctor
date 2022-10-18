@@ -12,30 +12,23 @@ export class DoctorPatientsComponent implements OnInit {
   constructor(public ds : DoctorService) { }
 
   ngOnInit(): void {
-    let obj = sessionStorage.getItem("doctorId");
+    let obj = localStorage.getItem("doctorId");
     if(obj!=null){
       this.user=obj;
     }
+    this.findPatient();
   }
 
-  name:string ="";
+  pname:string ="";
   symptoms:string ="";
   mobile:number = 0;
+  date:string ="";
+  pid:number=0;
   findPatient() {
     this.ds.findPatient(this.user).subscribe({
       next:(result:any)=>this.patients=result,
       error:(error:any)=>console.log(error),
       complete:()=>console.log("completed")
-    })
-  }
-    deletePatient(patients:any){
-      //console.log(pid)
-      this.ds.deletePatientById(this.patients).subscribe({
-        next:(result:any)=>console.log(result),
-        error:(error:any)=>console.log(error),
-        complete:()=>{
-          this.findPatient();   
-      }
     })
   }
 

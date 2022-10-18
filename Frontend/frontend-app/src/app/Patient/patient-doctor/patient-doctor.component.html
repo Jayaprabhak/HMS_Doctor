@@ -1,0 +1,16 @@
+<div>
+    <table border="1">
+        <tr>
+            <th>specialization</th>
+            <th>address</th>
+            <th>phoneno</th>
+            
+        </tr>
+        <tr *ngFor="let doctor of doctors">
+            <td>{{doctor.specialization}}</td>
+            <td>{{doctor.address}}</td>
+            <td>{{doctor.phno}}</td>
+            
+        </tr>
+    </table>
+</div>

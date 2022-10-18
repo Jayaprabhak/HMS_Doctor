@@ -13,7 +13,7 @@ export class ApplyJobComponent implements OnInit {
     phno:new FormControl(),
     dgender:new FormControl(),
     emailid:new FormControl(),
-    daddress:new FormControl(),
+    address:new FormControl(),
     specialization: new FormControl()
   })
   storeMsg : string = ""

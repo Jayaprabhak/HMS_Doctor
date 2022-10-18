@@ -6,7 +6,6 @@ export class Doctor {
         public dgender:string,
         public dage:number,
         public specialization:string,
-        public dstatus:string,
         public phno:number
         ){}
     }
