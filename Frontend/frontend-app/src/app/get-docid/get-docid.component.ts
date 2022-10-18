@@ -13,11 +13,7 @@ export class GetDocidComponent implements OnInit {
   ngOnInit(): void {
   }
   storeid(){
-    if(this.user.length>0) {
-     this.msg="Id Saved"
-    }else {
-      this.msg="Invalid Id"
-    }
+    console.log(this.user);
     localStorage.setItem("doctorId",this.user);
   }
 }

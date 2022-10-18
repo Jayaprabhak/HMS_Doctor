@@ -35,9 +35,14 @@ public class applyJobTesting {
 		WebElement radio2 = webdriver.findElement(By.id("f"));
 		radio1.click();
 		webdriver.findElement(By.id("aj")).click();
-
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		System.out.println("search tested successfully");
 	}
 
   }
+
 
