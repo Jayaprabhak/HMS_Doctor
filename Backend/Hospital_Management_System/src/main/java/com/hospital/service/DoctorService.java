@@ -89,11 +89,26 @@ public class DoctorService {
 		if(result.isPresent()) {
 					return "This id is already registered";
 		}else {
-
-				loginrepo.save(login);
+		if(login.getRole().equals("doctor")) {
+            if(docrepo.checkEmail(login.getEmailid()).isPresent()) {
+            	loginrepo.save(login);
 				return "Account created successfully";
+				
+            }else {
+            	return "Invalid Credentials";
+            }
+		}else {
+			if(patrepo.checkEmail(login.getEmailid()).isPresent()) {
+            	loginrepo.save(login);
+				return "Account created successfully";
+				
+            }else {
+            	return "Invalid Credentials";
+            }
 			
 		}	
+		
 	}
 	
+}
 }

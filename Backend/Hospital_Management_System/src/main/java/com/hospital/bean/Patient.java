@@ -21,7 +21,6 @@ public class Patient {
 	private String symptoms;
 	private String emailid;
 	private String mobile;
-	private String date;
 	private Integer dpid;
 
 	public int getPid() {
@@ -104,19 +103,11 @@ public class Patient {
 		this.dpid = dpid;
 	}
 
-	public String getDate() {
-		return date;
-	}
-
-	public void setDate(String date) {
-		this.date = date;
-	}
-
 	@Override
 	public String toString() {
 		return "Patient [pid=" + pid + ", pname=" + pname + ", pgender=" + pgender + ", page=" + page + ", pstatus="
 				+ pstatus + ", paddress=" + paddress + ", symptoms=" + symptoms + ", emailid=" + emailid + ", mobile="
-				+ mobile + ", date=" + date + ", dpid=" + dpid + "]";
+				+ mobile + ", dpid=" + dpid + "]";
 	}
 
 	public Patient() {

@@ -8,6 +8,7 @@ import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
 import { DoctorComponent } from './doctor/doctor.component';
 import { DoctorappointmentsComponent } from './doctorappointments/doctorappointments.component';
 import { GetDocidComponent } from './get-docid/get-docid.component';
+import { GetpatidComponent } from './Patient/getpatid/getpatid.component';
 import { PatientAdmitComponent } from './Patient/patient-admit/patient-admit.component';
 import { PatientAppointmentComponent } from './Patient/patient-appointment/patient-appointment.component';
 import { PatientDoctorComponent } from './Patient/patient-doctor/patient-doctor.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:"",redirectTo:"login",pathMatch:"full"},
 
   {path:"patient",component:PatientComponent, children :[
+  {path:"getpatid", component:GetpatidComponent},
   {path:"appointment", component:PatientAppointmentComponent},                     //need to add
   {path:"viewdoc", component:PatientDoctorComponent},
   {path:"savepat", component:PatientAdmitComponent} ]}

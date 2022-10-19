@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetDocidComponent implements OnInit {
   user:string="";
-  msg:string="";
   constructor() { }
 
   ngOnInit(): void {

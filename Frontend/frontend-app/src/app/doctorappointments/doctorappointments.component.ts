@@ -32,7 +32,6 @@ export class DoctorappointmentsComponent implements OnInit {
     })
   }
     deletePatient(patient:any){
-      //console.log(pid)
       this.ds.deletePatientById(patient).subscribe({
         next:(result:any)=>console.log(result),
         error:(error:any)=>console.log(error),

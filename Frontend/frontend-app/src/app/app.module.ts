@@ -18,6 +18,7 @@ import { PatientAppointmentComponent } from './Patient/patient-appointment/patie
 import { PatientDoctorComponent } from './Patient/patient-doctor/patient-doctor.component';
 import { PatientComponent } from './Patient/patient/patient.component';
 import { GetDocidComponent } from './get-docid/get-docid.component';
+import { GetpatidComponent } from './Patient/getpatid/getpatid.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { GetDocidComponent } from './get-docid/get-docid.component';
     PatientAppointmentComponent,
     PatientDoctorComponent,
     PatientComponent,
-    GetDocidComponent
+    GetDocidComponent,
+    GetpatidComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,9 @@
 <div align="center">
- 
+  <button class="btn btn-success " id="sid"><a routerLink="getid"> Save Id </a></button>
   <button class="btn btn-success " id="vapp"><a routerLink="viewApp"> View Appointments </a></button>
   <button class="btn btn-success " id="vpt"><a routerLink="viewPat"> View Patients </a></button>
   <button class="btn btn-success " id="dpt"><a routerLink="dispat"> Discharged Patient </a></button>
-  <button class="btn btn-success " id="sid"><a routerLink="getid"> Save Id </a></button>
+  <button (click)="logout()" class="btn btn-danger" id="lo"><a routerLink="">  Logout </a></button>
         <router-outlet></router-outlet>
         <hr/>
-  <button (click)="logout()" class="btn btn-success" id="sid"><a routerLink="">  LogOut </a></button>
 </div>

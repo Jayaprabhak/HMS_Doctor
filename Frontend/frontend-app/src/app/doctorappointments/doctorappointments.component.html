@@ -5,7 +5,6 @@
             <th>Patient Name</th>
             <th>Symptoms</th>
             <th>Mobile</th>
-            <th>Date</th>
             <th>Delete Patient</th>
         </tr>
         <tr *ngFor="let patient of patients">
@@ -13,7 +12,6 @@
             <td>{{patient.pname}}</td>
             <td>{{patient.symptoms}}</td>
             <td>{{patient.mobile}}</td>
-            <td>{{patient.date}}</td>
             <td><button (click) = "deletePatient(patient)" class="btn btn-danger"> Discharged </button></td>
         </tr>
     </table>

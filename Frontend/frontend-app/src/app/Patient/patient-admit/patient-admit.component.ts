@@ -14,7 +14,6 @@ export class PatientAdmitComponent implements OnInit {
     pname:new FormControl(),
     pgender:new FormControl(),
     page:new FormControl(),
-    date:new FormControl(),
     paddress:new FormControl(),
     symptoms:new FormControl(),
     emailid:new FormControl(),

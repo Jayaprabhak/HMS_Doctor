@@ -11,5 +11,7 @@ export class PatientComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  logout(){
+    localStorage.removeItem("patId");
+  }
 }
